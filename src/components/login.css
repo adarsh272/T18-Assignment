@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+
+:root{
+    --primary: #0089ED;
+    --dark: #333;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    text-align: left ;
+}
+
+.main-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-content{
+    background: var(--primary);
+    color: white;
+    width: 100vw;
+    height: 50vh;
+}
+
+.lower-content{
+    width: 80vw;
+    height: 50vh;
+    margin-right: -20px;
+}
+
+.logo{
+    margin: 31px 73px;
+}
+
+.main-area > h2{
+    font-size: 34px;
+}
+
+.main-area > .subtitle{
+    font-size: 24px;
+}
+
+
+.main-area > .desc{
+    font-size: 13px;
+    width: 311px;
+    margin-top: 15px;
+    word-wrap: break-word;
+}
+
+.main-flex-2{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.main-flex-2 > .main-area{
+    margin-left: 73px;
+}
+
+.main-flex-2 > img{
+    width: 300px;
+    height: 300px;
+    margin-top: -50px;
+}
+
+.form-header{
+    /* margin-top: 20px; */
+    font-size: 55px;
+}
+
+.right-text{
+    text-align: right;
+    margin-top: -106px;
+    font-size: 12px;
+}
+
+.right-text .sign-up{
+    /* margin-top: 10px; */
+    margin-right: 31px;
+    color: var(--primary);
+}
+
+.sign-in-options{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
+}
+
+.inputs{
+    margin-top: 43px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.forgot-pass{
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 11px;
+    color: var(--primary);
+    font-size: 12px;
+}
+
+.lower-content{
+    margin-left: 73px;
+}
+
+.lower-content .paper{
+    display: flex;
+    flex-direction: row;
+    gap: 31px;
+}
+
+.lower-content .card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+.lower-content .card-content .name{
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.lower-content .card-content .stat{
+    color: #ADADAD;
+    font-size: 12px;
+}
+
+
+.lower-content .card-content .close-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -20px;
+    color: #737373;
+    padding: 4px
+}
+
+
+
+  @media (max-width: 1210px){
+    .right-text{
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .sign-in-options{
+        margin-top: 30px;
+        gap: 70px;
+    }
+  }
+
+  @media (max-width: 990px){
+    .main-flex-2{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .main-flex-2 > img{
+        width: 200px;
+        height: 200px;
+        margin-top: -50px;
+        display: none;
+    }
+  }
+
+  @media (max-width: 730px){
+
+    .main-flex-2{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .main-flex-2 .main-area{
+        margin-right: 30px;
+    }
+
+    .main-flex-2 > img{
+        width: 200px;
+        height: 200px;
+        margin-top: -50px;
+        display: none;
+    }
+
+    .main-area > .desc{
+        margin-left: 120px;
+    }
+
+    .lower-content{
+        margin-top: 500px;
+        text-align: center;
+    }
+
+    .lower-content .paper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 31px;
+    }
+
+    .right-text{
+        justify-content: center;
+    }
+  }
+
+
+    @media (max-width: 500px){
+        .main-area > .desc{
+            display: none;
+        }
+
+        .lower-content{
+            margin-top: 400px;
+            text-align: center;
+        }
+        
+      }
+
+      @media (max-width: 450px){
+    
+        .lower-content{
+            margin-top: 450px;
+            margin-right: 40px;
+            text-align: center;
+        }
+
+        .lower-content .card-content .name{
+            margin-top: 5px;
+            font-weight: bold;
+            font-size: 12px;
+            
+        }
+        
+        .lower-content .card-content .stat{
+            color: #ADADAD;
+            font-size: 10px;
+        }
+        
+      }
